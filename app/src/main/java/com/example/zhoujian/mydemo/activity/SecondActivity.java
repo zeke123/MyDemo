@@ -22,6 +22,8 @@ public class SecondActivity extends Activity implements View.OnClickListener {
     private Button bt_login4;
     private Button bt_login5;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
