@@ -20,7 +20,6 @@ import butterknife.InjectView;
 
 public class MainActivity extends AppCompatActivity  {
 
-    public static final int TAKE_PHONE = 1;
 
     public static final String TAG = "MainActivity";
     @InjectView(R.id.bt_login1)
