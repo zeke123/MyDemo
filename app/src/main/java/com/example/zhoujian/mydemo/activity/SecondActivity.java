@@ -7,7 +7,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.example.zhoujian.mydemo.R;
 
@@ -24,7 +23,6 @@ public class SecondActivity extends Activity implements View.OnClickListener {
     private Button bt_login3;
     private Button bt_login4;
     private Button bt_login5;
-    private TextView tv_text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +39,6 @@ public class SecondActivity extends Activity implements View.OnClickListener {
         bt_login3 = (Button) findViewById(R.id.bt_login3);
         bt_login4 = (Button) findViewById(R.id.bt_login4);
         bt_login5 = (Button) findViewById(R.id.bt_login5);
-        tv_text = (TextView) findViewById(R.id.tv_text);
 
 
         bt_login1.setOnClickListener(this);
