@@ -5,8 +5,11 @@
 package com.example.zhoujian.mydemo.activity;
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.zhoujian.mydemo.R;
 
@@ -15,7 +18,7 @@ import com.example.zhoujian.mydemo.R;
  */
 public class SecondActivity extends Activity implements View.OnClickListener {
 
-
+    public static final String TAG = "SecondActivity";
     private Button bt_login1;
     private Button bt_login2;
     private Button bt_login3;
@@ -23,13 +26,11 @@ public class SecondActivity extends Activity implements View.OnClickListener {
     private Button bt_login5;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         initView();
-
 
     }
 
@@ -39,8 +40,6 @@ public class SecondActivity extends Activity implements View.OnClickListener {
         bt_login3 = (Button) findViewById(R.id.bt_login3);
         bt_login4 = (Button) findViewById(R.id.bt_login4);
         bt_login5 = (Button) findViewById(R.id.bt_login5);
-
-
         bt_login1.setOnClickListener(this);
         bt_login2.setOnClickListener(this);
         bt_login3.setOnClickListener(this);
@@ -53,11 +52,19 @@ public class SecondActivity extends Activity implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.bt_login1:
 
+                Toast.makeText(this, "周建", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.bt_login2:
 
+                Log.d(TAG, "zhoujian");
+
                 break;
             case R.id.bt_login3:
+
+                if(TextUtils.isEmpty("zhoujian"))
+                {
+                    Toast.makeText(this, "zhoujian", Toast.LENGTH_SHORT).show();
+                }
 
                 break;
             case R.id.bt_login4:
