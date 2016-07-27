@@ -16,9 +16,6 @@ import com.example.zhoujian.mydemo.R;
 public class SecondActivity extends Activity implements View.OnClickListener {
 
     private Button bt_login1;
-
-
-
     private Button bt_login2;
     private Button bt_login3;
     private Button bt_login4;
