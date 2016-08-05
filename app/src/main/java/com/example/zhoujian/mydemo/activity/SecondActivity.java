@@ -65,9 +65,17 @@ public class SecondActivity extends Activity implements View.OnClickListener {
                 {
                     Toast.makeText(this, "zhoujian", Toast.LENGTH_SHORT).show();
                 }
-
                 break;
             case R.id.bt_login4:
+
+                try {
+
+                    System.out.print("测试测试测试测试");
+                    System.out.print("测试测试测试测试");
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
                 break;
             case R.id.bt_login5:
