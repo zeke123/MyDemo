@@ -24,13 +24,13 @@ public class SecondActivity extends Activity implements View.OnClickListener {
     private Button bt_login3;
     private Button bt_login4;
     private Button bt_login5;
-
-
+    private String city = "南京";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         initView();
+        Toast.makeText(this, city, Toast.LENGTH_SHORT).show();
 
     }
 
